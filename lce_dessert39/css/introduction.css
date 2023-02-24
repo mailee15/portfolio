@@ -193,6 +193,7 @@ header .search a{
 }
 
 
+
 /* 임시로 이미지넣어 확인 */
 /* #contain{
   width:100%;
@@ -207,10 +208,12 @@ header .search a{
 } */
 
 
+
 #contain{
   width:85%;
-  max-width:1635px;
-  height:8200px;
+  /* max-width:1635px; */
+  /* max-width:2162px; */
+  height:8400px;
   margin-left:15%;
   position:relative;
   /* padding-top:40px; */
@@ -225,7 +228,10 @@ header .search a{
 }
 #contain .wrap .title{
   /* border:1px solid orange; */
-  
+  width:100%;
+}
+#contain .wrap .title > img{
+  width:100%;
 }
 #contain .wrap .title .title_txt{
   /* border: 1px solid purple; */
@@ -238,10 +244,10 @@ header .search a{
 #contain .wrap .title .title_txt h2{
   font-family: 'NanumSquare', sans-serif;
   font-weight: 1000;
-  font-size: 43px;  
+  font-size: 53px;  
   /* letter-spacing: -1px; */
   line-height: 50px; 
-  margin-bottom:60px;
+  margin-bottom:100px;
 }
 #contain .wrap .title .title_txt .txt{
   display: flex;
@@ -250,9 +256,8 @@ header .search a{
   width:50%;
   font-family : LINE Seed Sans KR;
   font-weight: 500;
-  font-size:20px;
-  letter-spacing: -1px;
-  line-height:35px;
+  font-size:25px;
+  line-height:43px;
   margin:0px 10px;
 
   /* border:1px solid coral; */
@@ -268,7 +273,7 @@ header .search a{
 }
 #contain .wrap .about .about_title{
   width:100%;
-  height:210px;
+  height:250px;
   background: url(../img/introduction/banner_middle.png) center/cover;
 }
 #contain .wrap .about .about_title .black{
@@ -281,15 +286,15 @@ header .search a{
   text-align: center;
   /* font-family: 'LINESeedKR-Bd'; */
   font-family : LINE Seed Sans KR;
-  padding:60px 0px;
+  padding:75px 0px;
   box-sizing: border-box;
 }
 #contain .wrap .about .about_title .black .txt h3{
-  font-size:47px;
+  font-size:55px;
   margin-bottom:2px;
 }
 #contain .wrap .about .about_title .black .txt p{
-  font-size:20px;
+  font-size:25px;
   font-weight: 100;
 }
 #contain .wrap .about .about_txt{
@@ -298,6 +303,7 @@ header .search a{
   position: relative;
 }
 #contain .wrap .about .about_txt .paint{
+  width:950px;
   position:absolute;
   z-index:-1;
   display: block;
@@ -311,17 +317,17 @@ header .search a{
   text-align: center;
 }
 #contain .wrap .about .about_txt .txt > h3{
-  font-size:33px;
-  padding-top:90px;
-  margin-bottom:55px;
+  font-size:37px;
+  padding-top:110px;
+  margin-bottom:60px;
 }
 #contain .wrap .about .about_txt .txt > p{
-  font-size:16px;
+  font-size:18px;
+  line-height: 30px;
   /* font-family: 'LINESeedKR-Rg'; */
   /* font-family: Arial; */
   font-family : LINE Seed Sans KR;
   font-weight: 500;
-  line-height: 25px;
 }
 #contain .wrap .about .about_txt .txt > p b{
   font-weight: 700;
@@ -331,7 +337,7 @@ header .search a{
   /* width:100%; */
 }
 #contain .wrap .about .about_circle .cir_big_area{
-  width:1480px;
+  width:1520px;
   margin:0px auto;
   display: flex;
   /* border: 1px solid pink; */
@@ -395,14 +401,14 @@ header .search a{
 }
 
 #contain .wrap .about .about_circle .cir_big_area > .and{
-  width:110px;
+  width:130px;
   font-family: 'NanumSquare', sans-serif;
   /* padding:0px 30px; */
   position: relative;
   /* border:1px solid red; */
 }
 #contain .wrap .about .about_circle .cir_big_area > .and .txt{
-  width:50px;
+  width:70px;
   text-align: center;
   margin:0px 30px;
   position: absolute;
@@ -421,7 +427,9 @@ header .search a{
 #contain .wrap .about .about_circle .cir_small_area > ul{
   width:420px;
   /* border:1px solid orangered; */
-  margin:0px 55px;
+  margin:0px 61px;
+
+  display:none;
 }
 #contain .wrap .about .about_circle .cir_small_area > .cir_small_fir > .steps{
   margin-top:130px;
@@ -479,37 +487,28 @@ header .search a{
 
 #contain .wrap .about .about_circle .cir_small_area > ul > .arrow{
   text-align: center;
-  /* border: 1px solid pink; */
 }
 #contain .wrap .about .about_circle .cir_small_area > ul > .arrow img{
   display: inline-block;
-  /* border: 1px solid pink; */
+  /* opacity:0.3; */
 }
 #contain .wrap .about .about_circle .cir_small_area > .cir_small_fir > .arrow{
-  padding:100px 0px;
+  padding:30px 0px 100px 0px;
+  /* animation: arrowdown 1s 0.7s linear; */
 }
 #contain .wrap .about .about_circle .cir_small_area > .cir_small_sec > .arrow{
-  padding:200px 0px;
+  padding:130px 0px 200px 0px;
+  /* animation: arrowdown 1s 1.4s linear; */
 }
 #contain .wrap .about .about_circle .cir_small_area > .cir_small_thr > .arrow{
-  padding:300px 0px;
+  padding:230px 0px 300px 0px;
+  /* animation: arrowdown 1s 2.1s linear; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes arrowdown{
+  0%{transform:translateY(-70px); opacity:0;}
+  100%{transform:translateY(0px); opacity:100;}
+}
 
 
 
@@ -519,11 +518,11 @@ header .search a{
   right:1%;
   bottom:2%;
   display:none;
-  z-index:10;
+  z-index:1000;
 }
 .Btn li{
-  width:60px;
-  height:60px;
+  width:75px;
+  height:75px;
   border:1px solid gray;
   border-radius: 40px;
   position: relative;
@@ -539,7 +538,7 @@ header .search a{
   cursor: pointer;
 }
 .Btn li img{
-  width:40px;
+  width:45px;
   position:absolute;
   top:50%;
   left:50%;
@@ -624,4 +623,73 @@ footer #copy{
 }
 
 
+@media(max-width:2070px){
+  #contain .wrap .title .title_txt .txt p{
+    font-size:22px;
+    line-height:38px;
+  }
+}
+
+
+@media(max-width:1920px){
+  #contain{
+    height:8200px;
+  }
+  #contain .wrap .title .title_txt h2{
+    font-size:43px;
+    margin-bottom:60px;
+  }
+  #contain .wrap .title .title_txt .txt p{
+    font-size:20px;
+    letter-spacing: -1px;
+    line-height:35px;
+  }
+  #contain .wrap .about .about_title{
+    height:210px;
+  }
+  #contain .wrap .about .about_title .black .txt{
+    padding:60px 0px;
+  }
+  #contain .wrap .about .about_title .black .txt h3{
+    font-size:47px;
+  }
+  #contain .wrap .about .about_title .black .txt p{
+    font-size:20px;
+  }
+  #contain .wrap .about .about_txt .paint{
+    width:783px;
+    height:auto;
+  }
+  #contain .wrap .about .about_txt .txt > h3{
+    font-size:33px;
+    padding-top:90px;
+    margin-bottom:55px;
+  }
+  #contain .wrap .about .about_txt .txt > p{
+    font-size:16px;
+    line-height: 25px;
+  }
+  #contain .wrap .about .about_circle .cir_big_area{
+    width:1480px;
+  }
+  #contain .wrap .about .about_circle .cir_big_area > .and{
+    width:110px;
+  }
+  #contain .wrap .about .about_circle .cir_big_area > .and .txt{
+    width:50px;
+  }
+  #contain .wrap .about .about_circle .cir_small_area > ul{
+    margin:0px 55px;
+  }
+
+
+
+  .Btn li{
+    width:60px;
+    height:60px;
+  }
+  .Btn li img{
+    width:40px;
+  }
+}
 

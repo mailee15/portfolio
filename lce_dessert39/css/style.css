@@ -224,7 +224,8 @@ header .search a{
 }
 #mainban{
   width:100%;
-  height:1000px;
+  /* min-height:1000px; */
+  height:1323px;
   position:relative;
   overflow: hidden;
 }
@@ -240,8 +241,9 @@ header .search a{
 }
 #mainban .mainImgs li{
   width:100%;
-  max-width:1635px;
-  height:100%;
+  /* max-width:1635px; */
+  max-width:2162px;
+  height:1323px;
   position:relative;
 }
 
@@ -430,8 +432,9 @@ header .search a{
 #content_area #fir_nature{
   width:100%;
   height:800px;
-  background:url(../img/green_back.png) no-repeat;
+  background:url(../img/green_back.png) center/cover;
   display: flex;
+  margin-bottom:100px;
 }
 #fir_nature .left{
   width:50%;
@@ -565,18 +568,20 @@ header .search a{
   width:50%;
   min-height: 800px;
   position: relative;
+  margin-left:50px;
+  box-sizing: border-box;
 }
 #fir_nature .right .nature_wrap{
   position: absolute;
   width:530px;
   height:320px;
   left:20px;
-  top:230px;
+  top:260px;
 }
 #fir_nature .right .green_txt{
   position: relative;
   color:#2b1e0e;
-  margin:90px 0px 30px 10px;
+  margin:100px 0px 30px 40px;
 }
 #fir_nature .right .green_txt .txt_dot{
   position: absolute;
@@ -702,16 +707,16 @@ header .search a{
 }
 #sec_news .news_content{
   width:66.6666%;
+  height:720px;
   display:flex;
 }
-
 #sec_news .title_area .news_title{
   margin-top:20px;
 }
 
 #sec_news .title_area{
   text-align: right;
-  padding-right:40px;
+  padding-right:70px;
 }
 #two_five .title_area h2{
   font-family: 'GangwonEduPowerExtraBoldA';
@@ -734,8 +739,7 @@ header .search a{
   z-index:-1;
 }
 #sec_news .title_area .news_title > div.fir > .pinkUnder{
-  width:320px;
-  right:0;
+  width:335px;
   bottom:12px;
 }
 #sec_news .title_area .news_title > div.sec > .pinkUnder{
@@ -781,10 +785,6 @@ header .search a{
   animation: arrowright 0.9s infinite;
 }
 
-
-#sec_news .news_content{
-  height:720px;
-}
 #sec_news .news_content > ul{
   width:33.3333%;
   padding:0px 5px;
@@ -918,7 +918,7 @@ header .search a{
 
 #thr_bestseller .title_area{
   text-align: left;
-  padding-left:40px;
+  padding-left:70px; /*78px 넘어가면 버튼위치 틀어짐*/
 }
 #thr_bestseller .title_area .best_title{
   margin-top:20px;
@@ -942,8 +942,7 @@ header .search a{
   z-index:-1;
 }
 #thr_bestseller .title_area .best_title div.fir > .pinkUnder{
-  width:320px;
-  left:0;
+  width:330px;
   bottom:12px;
 }
 #thr_bestseller .title_area .best_title div.sec > .pinkUnder{
@@ -974,7 +973,7 @@ header .search a{
   width:33.3333%;
   height:100%;
   text-align: right;
-  padding-right:40px;
+  padding-right:30px;
   position: relative;
 }
 #for_store .title_area .store_title{
@@ -1025,7 +1024,7 @@ header .search a{
   width:280px;
   height:100%;
   border: none;
-  -webkit-appearance: none;
+  -webkit-appearance: none;    /*뭐드라*/
   overflow: auto;
   margin-left:20px;
   font-size:17px;
@@ -1105,7 +1104,10 @@ header .search a{
   width:33.3333%;
   height:100%;
   margin-top:120px;
-  padding-top:40px;
+  padding-top:60px;
+  text-align: left;
+  padding-left:60px;
+  z-index: 25;
 }
 #fif_interior .interior_area .intercontent{
   width:510px;
@@ -1163,12 +1165,6 @@ header .search a{
   top:295px;
   left:320px;
   z-index: 20;
-}
-
-#fif_interior .title_area{
-  text-align: left;
-  padding-left:40px;
-  z-index: 25;
 }
 #fif_interior .title_area .best_title{
   /* margin-top:20px; */
@@ -1323,6 +1319,60 @@ footer #copy{
 }
 
 
+
+
+@media (max-width:2232px){
+  #mainban{
+    height:1000px;
+  }
+  #mainban .mainImgs li{
+    max-width:1899px;
+    /* height:1162px; */
+    height:1000px;
+  }
+}
+
+@media (max-width:1920px){
+  #fir_nature .right .green_txt{
+    margin:90px 0px 30px 40px;
+  }
+  #fir_nature .right .nature_wrap{
+    top:230px;
+  }
+
+  #mainban{
+    height:1000px;
+  }
+  #mainban .mainImgs li{
+    max-width:1635px;
+    height:1000px;
+  }
+  #content_area #fir_nature{
+    width:100%;
+    height:700px;
+  }
+  #sec_news .title_area{
+    padding-right:40px;
+  }
+  #sec_news .title_area .news_title > div.fir > .pinkUnder{
+    width:320px;
+    right:0;
+    bottom:12px;
+  }
+  #thr_bestseller .title_area{
+    padding-left:40px;
+  }
+  #thr_bestseller .title_area .best_title div.fir > .pinkUnder{
+    width:320px;
+    left:0;
+  }
+  #for_store .title_area{
+    padding-right:0px;
+  }
+  #fif_interior .title_area{
+    padding-left:40px;
+  }
+}
 
 
 @media (max-width:1600px){

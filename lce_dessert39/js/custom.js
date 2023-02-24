@@ -305,10 +305,6 @@ function fadeInOut(){
 
 
 
-
-
-
-
   
 
   //혼자 해본것
