@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DESSERT39_STORE</title>
+    <!--ios 전용 뷰포트-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <!--폰트어썸 CDN-->
+    <script src="https://kit.fontawesome.com/7b968f109c.js" crossorigin="anonymous"></script>
+    
+    <!--외부정의 css-->
+    <link href="css/store.css" rel="stylesheet">
+    
+    <!--<link rel="icon" type="image/ico" sizes="16*16" href="/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="16*16" href="/img/favicon.ico">-->
+
+    <!--jquery 라이브러리-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--jquery UI-->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!--외부정의 js-->
+    <script src="js/"></script>
+  </head>
+  <body style="overflow-x:hidden">
+      <!--x축에 생기는 불필요한 스크롤바 제거-->
+    <header>
+    <!-- header 영역 -->
+    <div class="headAll">
+      <a class="search_icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a class="toggle" href="#"><i class="fas fa-bars"></i></a>
+      <div id="wrap">
+        <div class="logo">
+          <a href="index.html"><img src="img/dessert39_full_white.png" alt="" width="100"></a>
+        </div>
+        <div class="logo_sec">
+          <a href="index.html"><img src="img/logowhitelong.png" alt="" width="200"></a>
+        </div>
+
+        <div id="gnb">
+          <ul class="gnb">
+            <li><a href="#">BRAND</a>
+              <ul class="sub">
+                <li><a href="introduction.html">소개</a></li>
+                <li><a href="#">BI</a></li>
+                <li><a href="#">본사</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="#">MENU</a>
+              <ul class="sub">
+                <li><a href="menu_dessert.html">디저트</a></li>
+                <li><a href="menu_drink.html">커피 & 음료</a></li>
+                <li><a href="#">삼구 수제 도넛</a></li>
+              </ul>
+            </li>
+            <li><a href="#">STORE</a>
+              <ul class="sub">
+                <li><a href="store.html">매장찾기</a></li>
+              </ul>
+            </li>
+            <li><a href="#">COMMUNITY</a>
+              <ul class="sub">
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">공지</a></li>
+                <li><a href="#">이벤트 & 소식</a></li>
+              </ul>
+            </li>
+            <li><a href="#">FRANCHISE</a>
+              <ul class="sub">
+                <li><a href="#">창업경쟁력</a></li>
+                <li><a href="#">인테리어</a></li>
+                <li><a href="#">가맹절차</a></li>
+                <li><a href="#">가맹비용</a></li>
+                <li><a href="#">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" name="search" placeholder="SEARCH" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SEARCH'" />
+            <a href="#"><img src="img/search_white.png" alt="search" width="23"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="contain">
+    <section id="pageTitle">
+      <div>
+        <h1>STORE</h1>
+      </div>
+    </section>
+
+    <div id="wrapper">
+      <div class="title">
+        <div class="wrap">
+          <h3>DESSERT39 매장 찾기</h3>
+          <div class="searchBox">
+            <input type="search" placeholder="매장명 또는 주소를 입력하세요." class="findStore" onfocus="this.placeholder = ''" onblur="this.placeholder = '매장명 또는 주소를 입력하세요.'">
+            <button type="button" class="btn_store">
+              <i class="fas fa-search"></i>
+            </button>
+          </div><!--searchBox END-->
+        </div><!--wrap END-->
+      </div><!--title END-->
+
+      <div class="map_area">
+        <div class="map">
+        <!--지도 넣기-->
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1670808049296" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+          2. 설치 스크립트
+          * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            "timestamp" : "1670808049296",
+            "key" : "2cxuz",
+            "mapWidth" : "2200",
+            "mapHeight" : "640"
+          }).render();
+        </script>
+        </div>
+
+      </div>
+    </div><!--wrapper END-->
+
+    <div class="store_info_area">
+      <ul class="store_info">
+        <li class="ansanjungang">
+          <div class="left">
+            <div class="txt">
+              <img src="img/locaton_black.png" alt="">
+              <h4>디저트39 안산중앙점</h4>
+            </div>
+            <div class="pic">
+              <img src="img/use/img_store1.jpg" alt="">
+            </div>
+          </div>
+
+          <ul class="right">
+            <li class="serv">
+              <p class="text">이용 가능 서비스 &#124;</p>
+              <ul class="services">
+                <li class="takeout">
+                  <img src="img/store_takeout.png" alt="">
+                </li>
+                <li class="delivery">
+                  <img src="img/store_delivery.png" alt="">
+                </li>
+                <li class="wifi">
+                  <img src="img/store_wifi.png" alt="">
+                </li>
+                <li class="toilet">
+                  <img src="img/store_toilet.png" alt="">
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="text">주소 &#124; </span>
+              <p>경기 안산시 단원구 예술대학로 9<br>(고잔동, 보배프라자)</p>
+            </li>
+            <li>
+              <span class="text">전화번호 &#124; </span>
+              <p>031) 410-3949</p>
+            </li>
+            <li>
+              <span class="text">영업시간 &#124; </span>
+              <p class="littletext">* 영업시간은 매장 사정에 따라<br>변동될 수 있습니다.</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="arrowBtn">
+        <button class="prev" type="button">
+          <img src="img/arrow-left.png" alt="">
+        </button>
+        <button class="next" type="button">
+          <img src="img/arrow-right.png" alt="">
+        </button>
+      </div>
+    </div>
+  </section><!--contain END-->
+
+
+
+  <ul class="Btn">
+    <li><a href="#for_store"><img src="img/location.png" alt=""></a></li>
+    <li><a href="#"><img src="img/phone-call.png" alt=""></a></li>
+    <li><button type="button"  id="topBtn"><img src="img/uparrow.png" alt=""></button></li>
+  </ul>
+
+
+  <!-- footer 영역 -->
+  <footer>
+    <div id="wrap">
+      <div class="wrap">
+        <div class="left">
+          <div class="txtlogo"><a href="#"><img src="img/dessert39_logotxt_black_trans.png" alt="logotxt"></a></div>
+          <div class="txt">
+            <p><b>Company/CEO</b>SMC INTERNATIONAL CO., LTD. / Minchang Shin, Hanna Choi</p>
+            <p><b>Address</b>321, Eonju-ro, Gangnam-gu, Seoul, Republic of Korea [Zip Code: 06226]</p>
+            <p><b>Customer Service</b><a href="#">1644 - 2927</a></p>
+            <p><b>Registration Number</b>719 - 86 - 00092</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="follow">
+            <h3>FOLLOW US</h3>
+            <ul class="sns">
+              <li><a href="#"><img src="img/facebookicon.png" alt=""></a></li>
+              <li><a href="#"><img src="img/instagramicon.png" alt=""></a></li>
+              <li><a href="#"><img src="img/youtubeicon.png" alt=""></a></li>
+              <li><a href="#"><img src="img/naver_icon.png" alt=""></a></li>
+              <li><a href="#"><img src="img/tiktokicon.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>CONTACT US</h3>
+            <span><a href="#">dessert39@smcinternational.co.kr</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy">
+      <p><b>TM & Copyright 2022 DESSERT 39. All Rights Reserved.</b></p>
+    </div>
+  </footer>
+
+</body>
+</html>

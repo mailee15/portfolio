@@ -117,9 +117,9 @@ $(window).ready(function(){
   
   $("#select_area .select > li:nth-child(6)").click(function(){
     $("#select_area .select > li, #content_area .content, #content_area .content_title > div").removeClass("on");
-    $("#select_area .select > li:nth-child(6), .content_title > .con_tit_lowsugar").addClass("on");
+    $("#select_area .select > li:nth-child(6), .content_title > .con_tit_milktea").addClass("on");
     $("#content_area .content").css("display","none");
-    $("#content_area .con_lowsugar").css("display","flex");
+    $("#content_area .con_milktea").css("display","flex");
   });
 })
 //소제목부분 왜 안나오지

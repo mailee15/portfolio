@@ -216,7 +216,7 @@ function fadeInOut(){
 
     if(winWidth > 1600){
       $(".headAll .gnb").css("display","block");
-    }else if(winWidth > 1050){
+    }else if(winWidth > 1085){
       $(".headAll .gnb").css("display","flex");
     }else{
       $(".headAll .gnb").css("display","none");

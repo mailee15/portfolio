@@ -56,7 +56,7 @@ header{
   font-size:23px;
   line-height:50px;
   position:fixed;
-  z-index:2;
+  z-index:600;
   letter-spacing: 1px;
 }
 header .logo{
@@ -191,22 +191,6 @@ header .search a{
   line-height:80px;
   display:none;
 }
-
-
-
-/* 임시로 이미지넣어 확인 */
-/* #contain{
-  width:100%;
-  height:5120px;
-  position:relative;
-  /* margin-right:10%; */
-  /* padding-top:40px; */
-  /* background: url(../img/use/introduction_img.png) center/cover;
-} */
-/* #contain img{
-  width:100%;
-} */
-
 
 
 #contain{
@@ -682,8 +666,6 @@ footer #copy{
     margin:0px 55px;
   }
 
-
-
   .Btn li{
     width:60px;
     height:60px;
@@ -693,3 +675,204 @@ footer #copy{
   }
 }
 
+@media (max-width:1600px){
+  header{
+    width:100%;
+    height:80px;
+    /* position:fixed; */
+    position: relative;
+  }
+  header .headAll{
+    height:100%;
+  }
+  /**/
+  header .headAll .search_icon > i{
+    max-height:20px;
+  }
+  /**/
+  header .headAll #wrap{
+    height:100%;
+  }
+  header .logo{
+    display:none;
+  }
+  header .logo a{
+    width:100%;
+  }
+  header .logo_sec{
+    width:30%;
+    height:80px;
+    display:block;
+    padding:10px 30px;
+    box-sizing: border-box;
+  }
+  header .logo_sec img{
+    display: block;
+  }
+  header #gnb{
+    height:80px;
+    float:right;
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:flex;
+    font-size:18px;
+  }
+  header .headAll #wrap #gnb .gnb{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    /* flex-direction:column;*/
+    margin-top:0;
+    overflow: visible;
+    padding:0;
+    margin-right:30px;/**/
+  }
+  header .gnb > li{
+    height:80px;
+    padding:15px 20px 0px 20px;
+    margin:0;
+    position:relative;
+    transition: 0.2s;
+  }
+  header .gnb > li a{
+    display: block;
+  }
+  header .gnb > li:hover{
+    /* padding:0; */
+    /* margin:0; */
+    height:100%;
+    border-radius: 0px;
+    background-color: #fff;
+  }
+  header .gnb > li .sub{
+    /* width:160px; */
+    width:155%;
+    position: absolute;
+    top:80px;
+    left:0;
+    border-radius: 0px 0px 30px 30px;
+    box-sizing: border-box;
+    /* display:none; */
+    /* height:0; */
+    /* animation: subdown 0.5s; */
+  }
+  header .gnb > li:hover .sub{
+    /* height:100%; */
+    transition: height ease-out 1s;
+  }
+  @keyframes subdown{
+    from{height:0%;}
+    to{height:100%;}
+  }
+  header .gnb > li:nth-child(4) .sub,
+  header .gnb > li:nth-child(5) .sub{
+    width:100%;
+  }
+  header .gnb > li:nth-child(2) .sub,
+  header .gnb > li:nth-child(4) .sub,
+  header .gnb > li:nth-child(5) .sub{
+    top:80px;
+  }
+ 
+  header .gnb > li .sub > li{
+    padding:10px 15px 0px 15px;
+    border-radius:0;
+    line-height:50px;
+    box-sizing: border-box;
+  }
+  header .gnb > li:hover .sub > li{
+    padding:10px 15px 0px 15px;
+    border-radius:0;
+  }
+  header .gnb > li .sub > li:hover{
+    line-height:50px;
+    box-sizing: border-box;
+  }
+  header .gnb > li .sub > li:first-child:hover{
+    border-radius: 0px 0px 0px 0px;
+  }
+  header .gnb > li .sub > li:last-child:hover{
+    border-radius: 0px 0px 30px 30px;
+  }
+  header input{
+    display:none;
+  }
+  header .headAll #wrap #gnb .search{
+    width:10%;
+    height:80px;
+    /* line-height:80px; */
+    padding:15px;
+    margin-right:15px;
+    box-sizing: border-box;
+  }
+  header .headAll #wrap #gnb .search img{
+    margin-right:10%;
+  }
+  header #wrap #gnb .gnb li{
+    font-size:20px;
+  }
+  header #wrap #gnb .gnb .search{
+    padding-right:5%;
+  }
+
+  #contain{
+    width:100%;
+    margin:auto;
+  }
+}
+
+@media (max-width:1085px){
+  header #wrap #gnb .search{
+    display:none;
+  }
+  .search_icon,
+  .toggle{
+    display:block;
+    padding-top:5px;
+  }
+  header #gnb{
+    width:100%;
+    height:100%;
+    top:80px;
+  }
+  header .headAll #wrap #gnb .gnb{
+    display:none;
+  }
+
+
+  header .headAll #wrap #gnb .gnb{
+    width:100%;
+    height:500%;
+    display: none;
+    background-color: #000;
+    flex-direction: column;
+    margin:0;
+  }
+  header #gnb .gnb > li{
+    width:100%;
+    height:20%;
+    position:relative;
+    margin:0;
+  }
+  header #gnb .gnb .sub{
+    position: relative;
+    width:100%;
+    top:0;
+    color:#000;
+    margin-left:20%;
+    z-index:200;
+    background-color: #fff;
+    border-radius: 0px 0px 30px 30px;
+  }
+  header #gnb .gnb .sub > li{
+    width:100%;
+  }
+  header #gnb .gnb .sub > li:hover{
+    background-color: #e7e6e6;;
+  }
+  header .headAll #wrap #gnb .search{
+    display:none;
+  }
+}

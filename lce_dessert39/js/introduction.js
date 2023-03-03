@@ -1,5 +1,28 @@
 $(function(){
 
+  //윈도우크기 줄어들면 gnb메뉴가 flex되어 상단표출
+  $(window).resize(function(){
+    var winWidth = $(window).width();
+
+    if(winWidth > 1600){
+      $(".headAll .gnb").css("display","block");
+    }else if(winWidth > 1068){
+      $(".headAll .gnb").css("display","flex");
+    }else{
+      $(".headAll .gnb").css("display","none");
+  }}
+);
+
+//  메뉴 토글버튼 > .sub 아코디언메뉴
+  // $(".headAll .gnb > li").click(function(){
+  //   $(this).children().slideToggle("fast");
+  // })
+  $(".headAll .toggle").click(function(){
+    $(".headAll .gnb").slideToggle("fast");
+  })
+
+
+
     $("#topBtn").click(function(){
         // window.scrollTo({top:0, behavior:'smooth'});
         $("html, body").animate({scrollTop:0},400);
