@@ -140,4 +140,12 @@ $(function(){
     }
   });
 
+
+  // $(window).onload(function(){
+  //   $("#modal").css("display","block");
+  // });
+  $("#modal .popup_close").click(function(){
+    $("#modal").css("display","none");
+  });
+
 });

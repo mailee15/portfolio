@@ -84,7 +84,11 @@ $(function(){
     if(scroll > bg3Top){
       $(".bg4 .txt").delay(700).fadeIn(1000);
     }
-    
+  });
+
+
+  $("#modal .popup_close").click(function(){
+    $("#modal").css("display","none");
   });
   
   

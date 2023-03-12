@@ -83,6 +83,7 @@ header .gnb{
   z-index:99;
 }
 header .gnb h1{
+  color:#fff;
   font-size:23px;
   /* hover시  ??? */text-decoration:underline 1px;
 }
@@ -583,6 +584,55 @@ header .gnb .dropdown{
 }
 .banner_for .box > li:last-child:hover .txt{
   text-shadow: 2px 2px 8px #7a7468;
+}
+
+
+/* #modal */
+#modal{
+  position:fixed;
+  top:0; left:0; right:0; bottom:0;
+  background-color: rgba(0,0,0,0.6);
+  z-index:1000;
+  /* display: none; */
+}
+#modal > .modal_popup{
+  width:500px;
+  height:300px;
+  position: absolute;
+  top:350px;left:50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  background-color: #fff;
+  padding:30px;
+  box-sizing: border-box;
+  font-family: 'Chosunilbo_myungjo';
+}
+#modal > .modal_popup h3{
+  text-align: center;
+  font-size:30px;
+  line-height:50px;
+  margin-bottom:30px;
+}
+#modal > .modal_popup p{
+  font-size:18px;
+  padding:0px 20px;
+  line-height:30px;
+  text-indent: 7px;
+}
+#modal > .modal_popup button{
+  float:right;
+  margin:35px 20px 0px 0px; 
+  padding:10px 17px;
+  font-size:15px;
+  background-color: transparent;
+  border:1px solid #bbb;
+  font-family: 'Chosunilbo_myungjo';
+  cursor:pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+#modal > .modal_popup button:hover{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1) inset;
 }
 
 

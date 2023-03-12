@@ -142,4 +142,8 @@ $(".woody .next").click(function(){
 });
 
 
+$("#modal .popup_close").click(function(){
+  $("#modal").css("display","none");
+});
+
 });

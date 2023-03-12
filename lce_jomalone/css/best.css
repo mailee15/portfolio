@@ -115,6 +115,7 @@ header .gnb .wrap .col{
 /*header .gnb .wrap .col li{line-height:80px;} 밑과 중복?*/
 
 header .gnb li h1{
+  color:#fff;
   padding-left:100px;
 }
 header .gnb .login{
@@ -174,7 +175,7 @@ header .gnb .dropdown{
   width:1120px;
   height:560px;
   margin:40px auto 40px;
-  display:flex;
+  display:flex;  
 }
 #mainDouble .left{
   width:560px;
@@ -273,6 +274,10 @@ header .gnb .dropdown{
   overflow: hidden;
   margin-left:55px;
   margin-right:20px;
+}
+#item_area .wrap > .left > video{
+  width:580px;
+  height:600px;
 }
 #item_area .wrap > .right{
   width:635px;
@@ -672,6 +677,56 @@ header .gnb .dropdown{
 }
 .banner_for .box > li:last-child:hover .txt{
   text-shadow: 2px 2px 8px #7a7468;
+}
+
+
+
+/* #modal */
+#modal{
+  position:fixed;
+  top:0; left:0; right:0; bottom:0;
+  background-color: rgba(0,0,0,0.6);
+  z-index:1000;
+  /* display: none; */
+}
+#modal > .modal_popup{
+  width:500px;
+  height:300px;
+  position: absolute;
+  top:350px;left:50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  background-color: #fff;
+  padding:30px;
+  box-sizing: border-box;
+  font-family: 'Chosunilbo_myungjo';
+}
+#modal > .modal_popup h3{
+  text-align: center;
+  font-size:30px;
+  line-height:50px;
+  margin-bottom:30px;
+}
+#modal > .modal_popup p{
+  font-size:18px;
+  padding:0px 20px;
+  line-height:30px;
+  text-indent: 7px;
+}
+#modal > .modal_popup button{
+  float:right;
+  margin:35px 20px 0px 0px; 
+  padding:10px 17px;
+  font-size:15px;
+  background-color: transparent;
+  border:1px solid #bbb;
+  font-family: 'Chosunilbo_myungjo';
+  cursor:pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+#modal > .modal_popup button:hover{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1) inset;
 }
 
 
