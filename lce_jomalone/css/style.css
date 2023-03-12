@@ -118,6 +118,7 @@ header .gnb li h1{
 header .gnb .login{
   display:flex;
   margin-right:60px;
+  color:#fff;
 }
 header .gnb .login li{
   margin-left:27px;
