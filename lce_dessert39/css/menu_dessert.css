@@ -372,6 +372,10 @@ header .search a{
   display:block;
 }
 
+/* content */
+#content_area > ul{
+  display:none;
+}
 #content_area .content{
   /* max-width:1260px; */
   max-width:1660px;
@@ -775,9 +779,13 @@ footer #copy{
   #mainban .mainImgs > li .back1600 img{
     width:100%;
   }
-
   #pageTitle{
     margin-top:40px;
+  }
+
+  footer{
+    width:100%;
+    min-width:200px;
   }
   footer #wrap{
     margin:auto;
@@ -847,11 +855,21 @@ footer #copy{
   .content > li{
     width:33.33%;
   }
+  /* #contain #content_area .content > li .item img{
+    width:80%;
+  } */
 
-  footer .wrap{
+  footer{
+    height:500px;
+  }
+  footer #wrap{
+    width:100%;
     max-width:800px;
     margin:auto;
     display:block;
+  }
+  footer #wrap > div{
+    width:100%;
   }
   footer .wrap > div{
     width:100%;
@@ -907,6 +925,10 @@ footer #copy{
   #contain #wrapper #select_area .pink_right{
     display:none;
   }
+
+  footer #wrap{
+    max-width:600px;
+  }
 }
 
 
@@ -960,6 +982,9 @@ footer #copy{
   .content > li .txt{
     font-size:1em;
   }
+  /* #contain #content_area .content > li .item img{
+    width:100%;
+  } */
 }
 
 
@@ -1037,6 +1062,9 @@ footer #copy{
   .content > li .item{
     max-height:600px;
   }
+  /* #contain #content_area .content > li .item img{
+    width:85%;
+  } */
   .content > li .txt{
     height:140px;
   }
@@ -1053,8 +1081,44 @@ footer #copy{
     left:48%;
     top:57%;
   }
+
+  footer{
+    height:620px;
+    padding:0px 30px;
+  }
+  footer > #wrap .wrap{
+    display:block;
+  }
+  footer > #wrap .wrap .right{
+    margin:30px 0px 20px 0px;
+    text-align: left;
+  }
+  footer > #wrap .wrap .right .follow .sns{
+    left:0;
+  }
+  footer > #wrap .wrap .right .contact{
+    margin-top:75px;
+  }
 }
 
+@media (max-width:680px){
+  footer{
+    min-height:650px;
+  }
+  footer #wrap .wrap .left .txt p{
+    font-size:0.9em;
+    line-height:33px;
+  }
+  footer #copy{
+    left:0;
+  }
+}
+
+@media (max-width:620px){
+  footer #wrap .wrap .right{
+    margin-top:15px;
+  }
+}
 
 @media (max-width:600px){
   .content > li span.best{
@@ -1100,9 +1164,27 @@ footer #copy{
   #pageTitle > div > h1{
     font-size:40px;
   }
+  footer #copy p{
+    font-size:0.9em;
+  }
 }
 @media(max-width:400px){
   .content > li .item a img{
     width:100%;
+  }
+}
+
+@media (max-width:385px){
+  footer #copy{
+    height:90px;
+  }
+  footer #copy p{
+    line-height:45px;
+  }
+}
+
+@media (max-width:342px){
+  footer #wrap .wrap{
+    font-size:0.9em;
   }
 }

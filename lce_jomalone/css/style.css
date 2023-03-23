@@ -162,7 +162,8 @@ header .gnb .dropdown{
   position: absolute; /* ***이걸 줘야 제이쿼리가 구현됨 */
 }
 .mainImgs .imgs > li{
-  width:33.3333%;
+  /* width:33.3333%; */
+  width:1920px;
   height:1080px;
 }
 /* #contain .mainImgs .dot > .on{
@@ -177,9 +178,9 @@ header .gnb .dropdown{
 .mainImgs .imgs .bg3{
   background:url(../img/main03.png) no-repeat center/cover;
 }
-.mainImgs img{
+/* .mainImgs img{
   display:block;
-}
+} */
 .mainImgs .dot{
   position:absolute;
   right:30px;
